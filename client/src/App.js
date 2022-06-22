@@ -1,45 +1,53 @@
 // client/src/components/App.js
-import { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import Resume from "./Resume";
 import Skills from "./Skills";
+import Projects from "./Projects";
+import {Link} from "react-scroll"
+import Contact from "./Contact";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
-  // useEffect(() => {
-  //   fetch("/hello")
-  //     .then((r) => r.json())
-  //     .then((data) => setCount(data.count));
-  // }, []);
-
-
-
 
   return (
-    <BrowserRouter>
       <div className="App">
-        <Switch>
-        <Route path="/contact">
-            <h1>Contact me</h1>
-          </Route>
-        <Route path="/resume">
-            <h1>Resume</h1>
-            <Resume></Resume>
-          </Route>
-          <Route path="/projects">
-            <h1>Projects</h1>
-          </Route>
-          <Route path="/skills">
-            <Skills></Skills>
-          </Route>
-          <Route path="/">
-            <Home/>
-          </Route>
-        </Switch>
+        <header className="nav">
+          <nav className="nav__container__actions">
+            <ul>
+              <li>
+                <Link activeClass="active" smooth spy to="about">
+                  ABOUT
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="resume">
+                  RESUME
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="projects">
+                  PROJECTS
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="skills">
+                  BLOG
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="contact">
+                  CONTACT ME
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section id="about"><Home></Home></section>
+        <section id="resume"><Resume></Resume></section>
+        <section id="projects"><Projects></Projects></section>
+        <section id="skills"><Skills></Skills></section>
+        <section id="contact"><Contact></Contact></section>
       </div>
-    </BrowserRouter>
   );
 }
 
