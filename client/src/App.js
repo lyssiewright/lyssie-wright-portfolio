@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <header className="nav">
           <nav className="nav__container__actions">
-            <ul>
+            <ul className="nav-list">
               <li>
                 <Link activeClass="active" smooth spy to="about">
                   ABOUT
@@ -31,7 +31,7 @@ function App() {
               </li>
               <li>
                 <Link activeClass="active" smooth spy to="skills">
-                  BLOG
+                  SKILLS
                 </Link>
               </li>
               <li>

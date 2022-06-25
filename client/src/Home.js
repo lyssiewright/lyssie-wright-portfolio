@@ -5,9 +5,6 @@ import medium from "./resources/medium.png"
 
 function Home() {
 
-
-  
-
   return (
     <div>
         <h1>Lyssie Wright</h1>

@@ -13,11 +13,13 @@ function Skills() {
 
   return (
     <div>
-        <img src={javascript}/>
-        <img src={html} />
-        <img src={css} />
-        <img src={ruby} />
-        <img src={rails} />
+        <h2>Skills</h2>
+        <br></br>
+        <img height="70" width="70" src={javascript}/>
+        <img height="70" width="70" src={html} />
+        <img height="70" width="70" src={css} />
+        <img height="70" width="70" src={ruby} />
+        <img height="70" width="70" src={rails} />
 
     </div>
     

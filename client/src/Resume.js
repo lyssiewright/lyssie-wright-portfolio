@@ -1,6 +1,7 @@
 import React from "react";
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import resume from "./Lyssie-Wright-Resume.pdf"
+// import resume from "./Lyssie-Wright-Resume.pdf"
+import resume from "./resources/Lyssie-Wright.png"
 
 function Resume() {
 
@@ -8,15 +9,12 @@ function Resume() {
   
 
   return (
-    <div>
-          <embed
-    src={resume}
-    type="application/pdf"
-    height={740}
-    width={500}/>
-        {/* <Document file={resume} /> */}
-    </div>
-    
+    <div className="resume">
+        <h2>Resume</h2>
+        <img height="600"
+            width="auto"
+            src={resume}/>
+        </div>
   );
 }
 

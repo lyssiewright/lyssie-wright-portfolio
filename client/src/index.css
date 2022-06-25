@@ -25,12 +25,18 @@ section {
   font-weight: bold;
 }
 
+#resume{
+  height: 110vh
+}
+
 #about {
   margin-top: -80px;
+  color: #3b3b3b;
+  background: #eaf2fa;
 }
 
 #projects,
-#contact {
+#contact, #resume, #skills {
   color: #3b3b3c;
   background: #eaf2fa;
 }
@@ -72,7 +78,7 @@ section {
   font-weight: bold;
 }
 
-ul {
+.nav-list {
   display: flex;
   gap: 1rem;
   font-size: 0.9rem;
@@ -87,3 +93,93 @@ li {
 li:hover {
   text-decoration: underline;
 }
+
+
+.st-box {
+  float:left;
+  width:30vw;
+  height: 500px;
+  background-color:white;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 12px;
+  margin-top:auto;
+  overflow: auto;
+  --c: #1095c1; /* the color */
+  color: #0000;
+  background: 
+    linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) no-repeat,
+    var(--_c,white);
+  -webkit-background-clip: text,padding-box,padding-box;
+          background-clip: text,padding-box,padding-box;
+  transition: 0s ,color .5s,background-color .5s;
+  
+}
+.nd-box {
+  float:left;
+  width:30vw;
+  height: 500px;
+  background-color:white; 
+  margin: 12px;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 12px;
+  margin-top: auto;
+  overflow: auto;
+  --c: #1095c1; /* the color */
+  color: #0000;
+  background: 
+    linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) no-repeat,
+    var(--_c,white);
+  -webkit-background-clip: text,padding-box,padding-box;
+          background-clip: text,padding-box,padding-box;
+  transition: 0s ,color .5s,background-color .5s;
+  
+}
+
+.rd-box {
+  width:30vw;
+  height: 500px;
+  background-color:white;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 12px;
+  margin-top: auto;
+  overflow: auto;
+  --c: #1095c1; /* the color */
+  color: #0000;
+  background: 
+    linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) no-repeat,
+    var(--_c,white);
+  -webkit-background-clip: text,padding-box,padding-box;
+          background-clip: text,padding-box,padding-box;
+  transition: 0s ,color .5s,background-color .5s;
+}
+
+.st-box:hover{
+  color: #fff;
+  --_c: var(--c);
+  --_p: 100%;
+  transition: 0.5s,color 0s .5s,background-color 0s .5s;
+}
+
+.rd-box:hover{
+  color: #fff;
+  --_c: var(--c);
+  --_p: 100%;
+  transition: 0.5s,color 0s .5s,background-color 0s .5s;
+}
+
+.nd-box:hover{
+  color: #fff;
+  --_c: var(--c);
+  --_p: 100%;
+  transition: 0.5s,color 0s .5s,background-color 0s .5s;
+}
+
+
+
+
