@@ -1,5 +1,6 @@
 import {React, useState} from "react";
 import {send} from 'emailjs-com';
+import me from './resources/me.jpg'
 
 
 
@@ -42,10 +43,15 @@ function Contact(){
         style={{
             width: "90%",
             margin: "auto",
-            backgroundColor: "white"
+            backgroundColor: "#fff",
+            boxShadow: "0.7em .5em 2em 0 grey",
+            padding: "20px"
+
         }}>
-        <h2>Contact Me!</h2>
-        {/* <div> */}
+        <h2
+            style={{
+                marginBottom:"20px"
+            }}>Contact Me!</h2>
         <form
             style={{
                 display: "flex",
@@ -53,14 +59,14 @@ function Contact(){
                         marginRight: "60px",
                         width: "40%",
                         float: "right",
-                        padding: "20px"
+                        paddingTop: "30px",
                         
                     }}
         onSubmit={onSubmit}>
             <input
                 type='text'
                 name='from_name'
-                placeholder='Your Name'
+                placeholder='Name'
                 value={toSend.from_name}
                 onChange={handleChange}
                 style={{marginBottom: "10px"}}
@@ -68,22 +74,24 @@ function Contact(){
             <input
                 type='text'
                 name='message'
-                placeholder='Your message'
+                placeholder='Message'
                 value={toSend.message}
                 onChange={handleChange}
-                style={{marginBottom: "10px", paddingBottom: "30px"}}
+                style={{marginBottom: "10px", paddingBottom: "50px"}}
             />
             <input
                 type='text'
                 name='reply_to'
-                placeholder='Your email'
+                placeholder='Email'
                 value={toSend.reply_to}
                 onChange={handleChange}
                 style={{marginBottom: "10px"}}
             />
             <button type='submit'>Submit</button>
         </form>
-    {/* </div> */}
+        <img width={170} 
+            height="auto"
+            src={me}></img>
     </div>
   )
 }

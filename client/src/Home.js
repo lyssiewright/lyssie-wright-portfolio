@@ -6,10 +6,11 @@ import medium from "./resources/medium.png"
 function Home() {
 
   return (
-    <div>
+    <div className="home-text">
         <h1>Lyssie Wright</h1>
-        <p>Hello there, welcome to my portfolio! </p>
+        <p>Hello there 👋 Welcome to my portfolio! </p>
         <p>I am a recent Software Engineering grad living in Fort Walton Beach, FL.</p>
+        <p>Feel free to look through my resume and projects listed below</p>
         <a href="https://www.linkedin.com/in/lyssie-wright-509b32152" target="_blank">
          <img src={LinkedIn} width="60" height="55"></img></a>
         <a href="https://github.com/lyssiewright" target="_blank">

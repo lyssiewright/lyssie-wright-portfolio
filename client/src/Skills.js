@@ -4,6 +4,7 @@ import html from "./resources/html.png";
 import css from "./resources/css.png";
 import ruby from "./resources/ruby.png";
 import rails from "./resources/rails.png";
+import postgresql from "./resources/postgresql.png"
 
 
 function Skills() {
@@ -15,12 +16,12 @@ function Skills() {
     <div>
         <h2>Skills</h2>
         <br></br>
-        <img height="70" width="70" src={javascript}/>
-        <img height="70" width="70" src={html} />
-        <img height="70" width="70" src={css} />
-        <img height="70" width="70" src={ruby} />
-        <img height="70" width="70" src={rails} />
-
+        <img height="90" width="90" src={javascript}/>
+        <img height="90" width="90" src={html} />
+        <img height="90" width="90" src={css} />
+        <img height="90" width="90" src={ruby} />
+        <img height="90" width="90" src={rails} />
+        <img height="90" width="90" src={postgresql}/>
     </div>
     
   );
