@@ -35,10 +35,13 @@ section {
   background: #eaf2fa;
 }
 
-#projects,
-#contact, #resume, #skills {
+#projects, #resume, #skills {
   color: #3b3b3c;
   background: #eaf2fa;
+}
+
+#contact{
+  background-color: #eaf2fa;
 }
 
 .nav {

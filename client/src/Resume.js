@@ -11,7 +11,7 @@ function Resume() {
   return (
     <div className="resume">
         <h2>Resume</h2>
-        <img height="600"
+        <img height="670"
             width="auto"
             src={resume}/>
         </div>
