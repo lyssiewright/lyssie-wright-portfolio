@@ -41,7 +41,7 @@ function Contact(){
   return (
     <div
         style={{
-            width: "90%",
+            width: "70%",
             margin: "auto",
             backgroundColor: "#fff",
             boxShadow: "0.7em .5em 2em 0 grey",
